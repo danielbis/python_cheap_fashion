@@ -7,12 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    .img-responsive:hover > .overlay {
-    background-color:#000;
-    opacity:0.5;
-  }
-  </style>
+  
 </head>
 <body style="background-color: DimGrey;">
 
@@ -21,20 +16,35 @@
   <p style="color: white">Find the closest matches for celebrity's looks with the most advanced technology of machine learning and neural networks. T$shirt is where fashion meets tech.</p>
  
   <div class="row">
-    <div class="col-sm-4"><a href="{{ url_for('celebrity', name = 'Brad Pitt') }}">
-    <img src="../static/bp.jpg" class="img-responsive" style="height: 555px"></a></div>
-    <div class="col-sm-4"><img src="../static/drake3.jpg" class="img-responsive" style="height: 555px"></div>
-    <div class="col-sm-4"><img src="../static/migos.jpg" class="img-responsive" style="height: 555px"></div>
+    <div class="col-sm-4">
+    <a href="{{ url_for('celebrity', name = names[0]) }}"> <img src={{paths[0]}} class="img-responsive" style="height: 555px"></a>
+    </div>
+
+    <div class="col-sm-4">
+    <a href="{{ url_for('celebrity', name = names[1]) }}"><img src={{paths[1]}} class="img-responsive" style="height: 555px"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="{{ url_for('celebrity', name = names[2]) }}"><img src= {{paths[2]}} class="img-responsive" style="height: 555px"></a>
+    </div>
   </div>
   <div class="row">
-    <div class="col-sm-4"><img src="../static/migos2.jpg" class="img-responsive" style="height: 555px"></div>
-    <div class="col-sm-4"><img src="../static/takeoff.jpg" class="img-responsive" style="height: 555px"></div>
-    <div class="col-sm-4"><img src="../static/bp2.jpg" class="img-responsive" style="height: 555px"></div>
+    <div class="col-sm-4">
+    <a href="{{ url_for('celebrity', name = names[3]) }}"><img src={{paths[3]}}  class="img-responsive" style="height: 555px"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="{{ url_for('celebrity', name = names[4]) }}"><img src={{paths[4]}}  class="img-responsive" style="height: 555px"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="{{ url_for('celebrity', name = names[5]) }}"><img src={{paths[5]}}  class="img-responsive" style="height: 555px"></a>
+    </div>
   </div>
   <div class="row">
-    <div class="col-sm-4"><img src="../static/set.jpg" class="img-responsive" style="height: 555px"></div>
-    <div class="col-sm-4"><img src="../static/drake2.jpg" class="img-responsive" style="height: 555px"></div>
-    <div class="col-sm-4"><img src="../static/bp3.jpg" class="img-responsive" style="height: 555px"></div>
+    <div class="col-sm-4">
+    <a href="{{ url_for('celebrity', name = names[6]) }}"><img src={{paths[6]}}  class="img-responsive" style="height: 555px"></a>
+    </div>
+    <div class="col-sm-4">
+    <a href="{{ url_for('celebrity', name = names[7]) }}"><img src={{paths[7]}}  class="img-responsive" style="height: 555px"></a> </div>
+    <!--<div class="col-sm-4"><a href="{{ url_for('celebrity', name = names[8]) }}"><img src={{paths[8]}} class="img-responsive" style="height: 555px"><</a>/div>-->
   </div>
 </div>
     
