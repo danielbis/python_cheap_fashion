@@ -8,10 +8,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color: DimGrey;">
+<body style="background-color: LightGrey;">
+<style>
+ h1{
+  font-style: italic;
+  font-family: verdana;
+  font-size: 300%;
+} 
+  h2{
+    color: DimGray;
+    font-family: verdana;
+    font-size: 200%;
+  }
+  a:hover;{
+    background-color: gray;
+  }
+</style>
 
-<div class="container-fluid">
-  <h1>{{name}}</h1>
+<div style="text-align:center" class="container-fluid">
+  <h1 style="color: black">T$hirt</h1>
+  <h2>{{name}}</h2>
   <div class="row">
   {%for e in examples%}
     <div class="col-sm-4">
