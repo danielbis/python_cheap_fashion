@@ -59,3 +59,5 @@ http://douglasduhaime.com/posts/identifying-similar-images-with-tensorflow.html
 https://www.tensorflow.org/tutorials/image_recognition
 https://stackoverflow.com/questions/34809795/tensorflow-return-similar-images
 Rethinking the Inception Architecture for Computer Vision, (Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, Zbigniew Wojna), https://arxiv.org/abs/1512.00567 
+
+Authors: Daniel Bis, Steven Centeno
