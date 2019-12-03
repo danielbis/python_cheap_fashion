@@ -1,8 +1,4 @@
-Authors: Daniel Bis, Steven Centeno
-
 Overview:
-
-Implementation: 
 
 We used Google’s Inception v3 model (https://arxiv.org/pdf/1409.4842.pdf) to process the images and extract their features. Inception is designed to label images among 1000 categories. We used it, but instead of passing our input through the final layer, we extract the features from the last pooling layer (pool3:0). It gives us a 2048 dimensional vector of most signifiant features. After that we cluster the images into multidimensional space using K-Means Clustering and find the nearest neighbors, which are essentially our most similar pictures.  
 
@@ -11,12 +7,11 @@ After that we populated SQL with the data about the matches: prices, url, titles
 One of the challenges that we encountered was gathering the data. Furthermore, data obtained varied in size and needed processing. Big variance in backgrounds and models wearing t-shirts affected our results, but more on that in the 'Room for improvement’ section. 
 
 Websites Scraped for matches:
-
-   Zappos
-   Zummies
-   Asos
-   Shop.css
-   Zalando
+*  Zappos
+*  Zummies
+*  Asos
+*  Shop.css
+*  Zalando
 
 
 Room for improvement:
@@ -31,33 +26,25 @@ We were unable to scrap enough images or find a useable data set. Additionally, 
 
 List of libraries used:
 
+```
 Scrapy
 Annoy
 nltk
-Datetime
 Keras
-Os
-Re
-Sys
-Json
 Flask
-Tarfile
 Instagram_Scraper
-Glob
 Psutil
-Defaultdict
 Numpy
 Urllib
 Tensorflow
 AnnoyIndex
-Ngrams
 Spatial
-Codecs
-Random
-
+```
 Sources:
 
 http://douglasduhaime.com/posts/identifying-similar-images-with-tensorflow.html
 https://www.tensorflow.org/tutorials/image_recognition
 https://stackoverflow.com/questions/34809795/tensorflow-return-similar-images
 Rethinking the Inception Architecture for Computer Vision, (Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jonathon Shlens, Zbigniew Wojna), https://arxiv.org/abs/1512.00567 
+
+Authors: Daniel Bis, Steven Centeno
